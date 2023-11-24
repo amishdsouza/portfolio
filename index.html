@@ -42,9 +42,11 @@
         <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
-    </nav><!-- .navbar -->
+    </nav>
+    <!-- .navbar -->
 
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -103,49 +105,47 @@
     <!-- ======= My Resume Section ======= -->
     <section id="experience" class="resume">
       <div class="container">
-
         <div class="section-title">
           <span>Professional Experience</span>
           <h2>Professional Experience</h2>
           <!-- <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p> -->
         </div>
 
-        
         <div class="row">
           <div class="col-lg-12">
             <h3 class="resume-title"></h3>
             <div class="resume-item">
-            <h4>Software Engineer</h4>
-            <p class="text-primary">Novigo Solutions, Mangalore, India.</p>
-            <h5>Feb 2022 - Jul 2022</h5>
-            <p>
-            Description: Streamlining and automating cargo weighing calculations, enhancing quality control, and improving efficiency by eliminating calculation errors by replacing manual techniques with a comprehensive system that provides easier client and ship management, field-level locking for real-time data updating during surveys, and an audit log for complete job history. It involved developing a mobile application for the Surveyors, and a website application for Master Mariner.
-            Technologies used: .NET Core, Entity Framework Core, Angular Framework, HTML, CSS, Bootstrap, and LINQ SQL
-            Tools: Visual Studio, Postman, SQL Database Management. 
-            Responsibilities: Developed proficiency in Entity Framework Core and demonstrated expertise in utilising web APIs, contributing to the successful completion of multiple .NET projects. Developed and tested web APIs using Postman, successfully implementing JWT tokens for authorization purposes in web API calls. Implementing CRUD functionality for the application, and AppContext for user settings
-            </p>
-              <p>
-                <ul>
-                  <li>Engaged with clients to understand their needs and translate them into practical software solutions.</li>
-                  <li>Collaborated with a cross-functional team of designers, developers, and project managers.</li>
-                  <li>Worked on diverse client projects across different industries and domains. </li>
-                  <li>Utilized new technologies such as Postman for API testing and Entity Framework for database management.</li>
-                </ul>
-              </p>
+              <h4>Software Engineer</h4>
+              <p class="text-primary">Novigo Solutions, Mangalore, India.</p>
+              <h5>Feb 2022 - Jul 2022</h5>
+              <div class="mt-2">
+                <b> Description: </b> Streamlining and automating cargo weighing calculations, enhancing quality control, and improving efficiency by eliminating calculation errors by replacing manual techniques with a comprehensive system that provides easier client and ship management, field-level locking for real-time data updating during surveys, and an audit log for complete job history. It involved developing a mobile application for the Surveyors, and a website application for Master Mariner.
+              </div>
+
+              <div class="mt-4">
+                <b>Technologies used: </b> HTML, CSS, Bootstrap, .NET Core, Entity Framework Core, Angular Framework, and LINQ SQL
+              </div>
+
+              <div class="mt-4">
+                <b>Tools: </b> Visual Studio, Postman, SQL Database Management. 
+              </div>
+
+              <div class="mt-4">
+                <b> Responsibility: </b> Developed proficiency in Entity Framework Core and demonstrated expertise in utilising web APIs, contributing to the successful completion of multiple .NET projects. Developed and tested web APIs using Postman, successfully implementing JWT tokens for authorization purposes in web API calls. Implementing CRUD functionality for the application, and AppContext for user settings
+              </div>
             </div>
 
             <div class="resume-item">
-            <h4>Junior Administrator</h4>
-            <p class="text-primary">Glowtouch Technologies, Mangalore, India.</p>
-            <h5>Apr 2019 - Nov 2020</h5>
-              <p>
-                <ul>
-                    <li>Worked on websites built with different platforms: Laravel, WordPress, Weebly, and other frameworks.</li>
-                    <li>Experienced in managing Linux and Windows servers.</li>
-                    <li>Successfully resolved over 15,000+ customer issues worldwide.</li>
-                    <li>Managed domains and hosting accounts for various clients. </li>
-                </ul> 
-              </p>
+              <h4>Junior Administrator</h4>
+              <p class="text-primary">Glowtouch Technologies, Mangalore, India.</p>
+              <h5>Apr 2019 - Nov 2020</h5>
+              <div class="mt-2">
+                <b> Description: </b> The role involved delivering round-the-clock assistance to users navigating web hosting services. The position required proficiency in various support channels, including live chat, phone, and email from customers all around the world.
+              </div>
+
+              <div class="mt-4">
+                <b> Responsibility: </b> Encompassed addressing technical challenges related to website setup developed with different platforms, and server configurations, with a focus on providing clear and step-by-step guidance
+              </div>
             </div>
           </div>
         </div>
@@ -281,6 +281,107 @@
       </div>
     </section>
     <!-- End My Certifications Section -->
+
+    <!-- ======= My project Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>My Projects</span>
+          <h2>My Projects</h2>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">Academic Projects</li>
+          <li data-filter=".filter-card">Personal Projects</li>
+          <li data-filter=".filter-web">Client Projects</li>
+        </ul>
+      
+
+      <div id="myBtnContainer" class="d-flex justify-content-center">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+      </div>
+    </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <img src="assets/img/portfolio/acedmic1.jpg" alt="Mountains" style="width:100%">
+        <h4>GoodHeart</h4>
+        <p>A sponsored project dedicated to conducting giveaways.</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src="assets/img/portfolio/client1.jpg" alt="Lights" style="width:100%">
+        <h4>Intertek</h4>
+        <p>A real-time application for managing customer information, tracking vessel details, and monitoring delegated tasks for the ship crew</p>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <h4>Forest</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+
+    <div class="column cars">
+      <div class="content">
+        <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+        <h4>Retro</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+        <h4>Fast</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+        <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+        <h4>Classic</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+
+    <div class="column people">
+      <div class="content">
+        <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+        <h4>Girl</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+        <h4>Man</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+        <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+        <h4>Woman</h4>
+        <p>Lorem ipsum dolor..</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+    </section> 
+
+        
+   
+
+
 
     <!-- ======= My Projects Section ======= -->
     <section id="portfolio" class="portfolio">
